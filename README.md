@@ -1,2 +1,2 @@
 # mac
-My Mac .dotfiles
+My Mac .dotfiles for work

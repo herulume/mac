@@ -1,0 +1,9 @@
+[user]
+	name = Eduardo Jorge
+	email = eduardo.barbosa@saltpay.co
+[core]
+	editor = neovim
+[url "git@github.com:saltpay"]
+	insteadOf = https://github.com/saltpay
+[commit]
+	gpgsign = true
