@@ -22,7 +22,9 @@ require "paq" {
   "lewis6991/gitsigns.nvim"; -- git signs
 
   "tpope/vim-sleuth"; 
---  {"fatih/vim-go", do=:GoUpdateBinaries};
+
+  -- LSP
+  "neovim/nvim-lspconfig";
 }
 
 -- lualine

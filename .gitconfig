@@ -3,12 +3,23 @@
 	email = eduardo.barbosa@saltpay.co
 	signingkey = Eduardo Jorge <eduardo.barbosa@saltpay.co>
 [core]
-	editor = neovim
+	editor = nvim
 [url "git@github.com:saltpay"]
 	insteadOf = https://github.com/saltpay
 [commit]
 	gpgsign = true
 [alias]
+        pf = push --force-with-lease
+        aa = add --all
+        c = commit -m
+        extend = commit --amend --no-edit
+        reword = commit --amend 
+        s = status
+        co = checkout
+        cob = checkout -b
+        del = branch -D
+        br = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+        lg = log --pretty=format:\"%C(magenta)%h%Creset -%C(red)%d%Creset %s %C(dim green)(%cr) [%an]\" --abbrev-commit -30
 	rb = "!f() { \
             echo fetching...; \
             git fetch; \
